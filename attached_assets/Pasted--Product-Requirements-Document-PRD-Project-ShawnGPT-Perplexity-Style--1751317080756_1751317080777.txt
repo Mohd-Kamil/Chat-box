@@ -1,0 +1,124 @@
+
+
+---
+
+# 📝 Product Requirements Document (PRD)
+
+### Project: **ShawnGPT** – Perplexity-Style AI Chatbot (English + Hinglish)
+
+**Platforms:** Web (Desktop + Mobile), Cursor.dev (for development)
+**Owner:** You
+**Version:** 1.0
+**Last Updated:** June 30, 2025
+
+---
+
+## 🧩 1. Product Overview
+
+**ShawnGPT** is a next-gen, **Hinglish-speaking AI chatbot** that blends the conversational depth of ChatGPT with the sleek, research-focused interface of Perplexity.ai. It supports **movie/game/series recommendations**, performs **real-time web searches**, understands both **English and Hinglish**, and features a **responsive, immersive dark-themed UI**.
+
+---
+
+## 🎯 2. Objective
+
+Build a chatbot named **ShawnGPT** that:
+
+* **Engages in Hinglish + English** with slang and casual tone
+* **Suggests trending content** (movies, games, shows)
+* **Performs deep research** via search APIs
+* Looks and works like **Perplexity**, with full UI/UX polish
+* Works **smoothly on both desktop and mobile devices**
+* Uses **100% free APIs**
+* Offers **interactive, voice-like chatbot experience**
+
+---
+
+## 🖥️ 3. UI/UX Requirements
+
+### 3.1 Visual Design
+
+* **Dark Theme** (default)
+* Inspired by **Perplexity.ai**
+* Center-aligned chat interface with response typing animation
+* Side panel (mobile collapsible): chat history, search topics, settings
+* Message cards with:
+
+  * Source links (for research queries)
+  * API response summaries (e.g., trending movies)
+  * Markdown rendering
+  * Copy/share buttons
+
+### 3.2 Mobile + Desktop Responsiveness
+
+* Fully **responsive layout**
+
+  * On desktop: wide 3-panel layout (Chat | History | Sidebar)
+  * On mobile: collapsible panels, bottom navigation, sticky reply bar
+* **Touch-friendly UI** on mobile
+* Fast loading with **lazy loading** for assets
+* Works on all major browsers (Chrome, Firefox, Safari)
+
+---
+
+## 🧠 4. Functional Requirements
+
+| Feature                             | Description                                           |
+| ----------------------------------- | ----------------------------------------------------- |
+| **Conversational Chat**             | Free-flow chat with support for Hinglish + slang      |
+| **Language Support**                | Understands and replies in English, Hindi, Hinglish   |
+| **Movie/TV Suggestions**            | Uses TMDb API to recommend trending movies/web series |
+| **Game Suggestions**                | Uses RAWG API to fetch trending/popular games         |
+| **Web Search & Research**           | Uses Serper.dev to perform real-time search queries   |
+| **Long-form Answer Generation**     | Returns detailed, structured responses                |
+| **Prompt Memory (local)**           | Stores last few chats in local storage/session        |
+| **Copy, Share, Like Response**      | Interactive buttons for each response block           |
+| **Voice Input (optional)**          | Integrate Web Speech API for voice-to-text            |
+| **Streaming Response (typewriter)** | Smooth, animated text generation                      |
+
+---
+
+## 🔌 5. Integrations (All Free)
+
+| API / Model                    | Purpose                                  |
+| ------------------------------ | ---------------------------------------- |
+| **Hugging Face Inference API** | LLM for chat (e.g., Mistral 7B or GPT-J) |
+| **TMDb API**                   | Movies / Web series                      |
+| **RAWG.io API**                | Games                                    |
+| **Serper.dev API**             | Web search & research                    |
+| **Web Speech API (optional)**  | Voice input                              |
+
+---
+
+## ⚙️ 6. Technical Stack
+
+| Component           | Stack                                                                 |
+| ------------------- | --------------------------------------------------------------------- |
+| Frontend            | HTML, CSS (Tailwind or Bootstrap), React (recommended), or Vanilla JS |
+| Backend (if needed) | Node.js or Python (Flask / FastAPI)                                   |
+| Hosting             | Vercel, Netlify, or Firebase (for free tier)                          |
+| LLM Access          | Hugging Face Inference API (free models)                              |
+| Mobile-Friendly     | CSS media queries + mobile-first design                               |
+
+---
+
+## 🧪 7. Testing Requirements
+
+* [ ] Load tests for mobile and desktop performance
+* [ ] Response accuracy for Hinglish & slang
+* [ ] API rate-limit handling
+* [ ] UI scaling on various screen sizes (iPhone, Android, iPad, Desktop)
+* [ ] Research response quality vs. ChatGPT/Perplexity benchmarks
+
+---
+
+## 🛠️ 8. Future Enhancements
+
+* User accounts (sign-in for history sync)
+* Telegram/WhatsApp bot extension
+* Voice output (TTS using Web Speech API)
+* Caching for faster repeated queries
+* Multilingual support (regional languages)
+
+---
+
+make it easy for me to deploy and dont install any dependencies now, it should be easily deployed on a free web hosting service that can be live 24/7
